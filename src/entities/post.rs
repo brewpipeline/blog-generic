@@ -49,6 +49,7 @@ pub struct Post {
     pub author: Author,
     pub tags: Vec<Tag>,
     pub image_url: Option<String>,
+    pub processed_image_urls: std::collections::HashMap<String, String>,
     pub noindex: bool,
 }
 

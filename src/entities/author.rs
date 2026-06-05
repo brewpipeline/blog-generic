@@ -13,6 +13,7 @@ pub struct Author {
     pub registered_at: u64,
     pub status: Option<String>,
     pub image_url: Option<String>,
+    pub processed_image_urls: std::collections::HashMap<String, String>,
     pub editor: u8,
     pub blocked: u8,
     pub notification_subscribed: Option<u8>,
