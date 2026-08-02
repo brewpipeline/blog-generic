@@ -41,3 +41,9 @@ pub struct LoginTelegramQuestion {
 pub struct LoginAnswer {
     pub token: String,
 }
+
+impl From<String> for LoginAnswer {
+    fn from(token: String) -> Self {
+        Self { token }
+    }
+}

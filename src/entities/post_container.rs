@@ -6,3 +6,9 @@ use serde::{Deserialize, Serialize};
 pub struct PostContainer {
     pub post: Post,
 }
+
+impl From<Post> for PostContainer {
+    fn from(post: Post) -> Self {
+        Self { post }
+    }
+}
